@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E41A8AC4298647F400F17AF1 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41A8AC3298647F400F17AF1 /* QuestionsViewController.swift */; };
 		E44669362985231E0092699B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44669352985231E0092699B /* AppDelegate.swift */; };
 		E44669382985231E0092699B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44669372985231E0092699B /* SceneDelegate.swift */; };
 		E446693A2985231E0092699B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44669392985231E0092699B /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E41A8AC3298647F400F17AF1 /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
 		E44669322985231E0092699B /* FlagQuizApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlagQuizApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E44669352985231E0092699B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E44669372985231E0092699B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				E44669372985231E0092699B /* SceneDelegate.swift */,
 				E44669392985231E0092699B /* ViewController.swift */,
 				E446693B2985231E0092699B /* Main.storyboard */,
+				E41A8AC3298647F400F17AF1 /* QuestionsViewController.swift */,
 				E446694B298525550092699B /* ResultsViewController.swift */,
 				E4466949298524ED0092699B /* SettingsViewController.swift */,
 				E446693E2985231F0092699B /* Assets.xcassets */,
@@ -146,6 +149,7 @@
 			files = (
 				E446693A2985231E0092699B /* ViewController.swift in Sources */,
 				E44669362985231E0092699B /* AppDelegate.swift in Sources */,
+				E41A8AC4298647F400F17AF1 /* QuestionsViewController.swift in Sources */,
 				E44669382985231E0092699B /* SceneDelegate.swift in Sources */,
 				E446694C298525550092699B /* ResultsViewController.swift in Sources */,
 				E446694A298524ED0092699B /* SettingsViewController.swift in Sources */,
