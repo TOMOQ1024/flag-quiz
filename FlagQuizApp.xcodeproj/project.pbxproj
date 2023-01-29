@@ -21,7 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		78E6ED792986882500FD1A6A /* Countries.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Countries.csv; sourceTree = "<group>"; };
+		78E6ED792986882500FD1A6A /* Countries.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 0; path = Countries.csv; sourceTree = "<group>"; };
 		E41A8AC3298647F400F17AF1 /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
 		E41A8AC52986739300F17AF1 /* CountryClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryClass.swift; sourceTree = "<group>"; };
 		E44669322985231E0092699B /* FlagQuizApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlagQuizApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,7 +76,6 @@
 				E446693E2985231F0092699B /* Assets.xcassets */,
 				E44669402985231F0092699B /* LaunchScreen.storyboard */,
 				E44669432985231F0092699B /* Info.plist */,
-				78E6ED75298679BE00FD1A6A /* Countrys.csv */,
 				E41A8AC52986739300F17AF1 /* CountryClass.swift */,
 				78E6ED792986882500FD1A6A /* Countries.csv */,
 			);

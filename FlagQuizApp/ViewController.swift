@@ -8,31 +8,45 @@
 import UIKit
 
 // グローバル変数宣言
-var countries: [County] = []
+var countries: [String:[Country]] = [:]
 
 class ViewController: UIViewController {
     
-    var csvArray: [String] = []
+    var csvLines = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        //
         
-        //
+        loadCSV(fileName: "Countries")
+        for i in 0..<csvLines.count {
+            let line = csvLines[i].components(separatedBy: ",")
+            let newCountry = Country(i,line[0],line[1])
+            
+            if !countries.keys.contains(newCountry.area) {
+                countries[newCountry.area] = []
+            }
+            countries[newCountry.area]?.append(newCountry)
+        }
+        
+        print(countries)
     }
 
-    func loadCSV(fileName: String) -> [String] {
-        let csvBundle = Bundle.main.path(forResource: fileName, ofType: "csv")!
-        do {
-            let csvData = try String(contentsOfFile: csvBundle,encoding: String.Encoding.utf8)
-            let lineChange = csvData.replacingOccurrences(of: "\r", with: "\n")
-            csvArray = lineChange.components(separatedBy: "\n")
-            csvArray.removeLast()
-        } catch {
-            print("エラー")
+    func loadCSV(fileName: String){
+        csvLines = [String]()
+
+        guard let path = Bundle.main.path(forResource:fileName, ofType:"csv") else {
+            print("csvファイルがないよ")
+            return
         }
-        return csvArray
+
+        do {
+            let csvString = try String(contentsOfFile: path, encoding: String.Encoding.utf8)
+            csvLines = csvString.split(whereSeparator: \.isNewline).map{String($0)}
+            csvLines.removeLast()
+        } catch let error as NSError {
+            print("エラー: \(error)")
+        }
     }
 
 }
