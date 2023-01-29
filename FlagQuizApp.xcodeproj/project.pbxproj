@@ -37,6 +37,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		78E6ED7229865F7000FD1A6A /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		E44669292985231E0092699B = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +63,7 @@
 		E44669342985231E0092699B /* FlagQuizApp */ = {
 			isa = PBXGroup;
 			children = (
+				78E6ED7229865F7000FD1A6A /* New Group */,
 				E44669352985231E0092699B /* AppDelegate.swift */,
 				E44669372985231E0092699B /* SceneDelegate.swift */,
 				E44669392985231E0092699B /* ViewController.swift */,
