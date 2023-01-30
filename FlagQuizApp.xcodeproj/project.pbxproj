@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		78E6ED7A2986882500FD1A6A /* Countries.csv in Resources */ = {isa = PBXBuildFile; fileRef = 78E6ED792986882500FD1A6A /* Countries.csv */; };
+		78E6ED802986ACF800FD1A6A /* Countries.csv in Resources */ = {isa = PBXBuildFile; fileRef = 78E6ED7F2986ACF800FD1A6A /* Countries.csv */; };
 		E41A8AC4298647F400F17AF1 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41A8AC3298647F400F17AF1 /* QuestionsViewController.swift */; };
 		E41A8AC62986739300F17AF1 /* CountryClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41A8AC52986739300F17AF1 /* CountryClass.swift */; };
 		E41A8AC82986A4B000F17AF1 /* QuestionClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41A8AC72986A4B000F17AF1 /* QuestionClass.swift */; };
@@ -22,7 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		78E6ED792986882500FD1A6A /* Countries.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 0; path = Countries.csv; sourceTree = "<group>"; };
+		78E6ED7F2986ACF800FD1A6A /* Countries.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Countries.csv; sourceTree = "<group>"; };
 		E41A8AC3298647F400F17AF1 /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
 		E41A8AC52986739300F17AF1 /* CountryClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryClass.swift; sourceTree = "<group>"; };
 		E41A8AC72986A4B000F17AF1 /* QuestionClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionClass.swift; sourceTree = "<group>"; };
@@ -79,6 +79,7 @@
 				E44669402985231F0092699B /* LaunchScreen.storyboard */,
 				E44669432985231F0092699B /* Info.plist */,
 				E41A8AC52986739300F17AF1 /* CountryClass.swift */,
+				78E6ED7F2986ACF800FD1A6A /* Countries.csv */,
 				78E6ED792986882500FD1A6A /* Countries.csv */,
 				E41A8AC72986A4B000F17AF1 /* QuestionClass.swift */,
 			);
@@ -144,9 +145,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E44669422985231F0092699B /* LaunchScreen.storyboard in Resources */,
-				78E6ED7A2986882500FD1A6A /* Countries.csv in Resources */,
 				E446693F2985231F0092699B /* Assets.xcassets in Resources */,
 				E446693D2985231E0092699B /* Main.storyboard in Resources */,
+				78E6ED802986ACF800FD1A6A /* Countries.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
