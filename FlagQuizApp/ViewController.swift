@@ -32,6 +32,11 @@ class ViewController: UIViewController {
         }
         
         print("test question:")
+        for a in countries {
+            if !(areaFlg[a.key] ?? false) {
+                areaFlg[a.key] = true
+            }
+        }
         let q = Question(2, areaFlg)
         for _ in 0..<q.count {
             q.create()
