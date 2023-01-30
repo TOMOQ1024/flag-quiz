@@ -9,6 +9,7 @@ import UIKit
 
 // グローバル変数宣言
 var countries: [String:[Country]] = [:]
+var areaFlg: [String:Bool] = [:]
 
 class ViewController: UIViewController {
     
@@ -18,6 +19,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        // CSVファイルを読み込み，countries変数を初期化する
         loadCSV(fileName: "Countries")
         for i in 0..<csvLines.count {
             let line = csvLines[i].components(separatedBy: ",")
@@ -29,7 +31,17 @@ class ViewController: UIViewController {
             countries[newCountry.area]?.append(newCountry)
         }
         
-        print(countries)
+        print("test question:")
+        let q = Question(2, areaFlg)
+        for _ in 0..<q.count {
+            q.create()
+            print("---Question Created---")
+            print("Question \(q.current)/\(q.count)")
+            print("Candidates:")
+            print(q.options.map{Country.getCountryById($0).name})
+            print("Answer Number(1...4): ")
+            print(q.answer)
+        }
     }
 
     func loadCSV(fileName: String){

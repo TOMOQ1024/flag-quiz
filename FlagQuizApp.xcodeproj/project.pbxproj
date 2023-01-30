@@ -10,6 +10,7 @@
 		78E6ED7A2986882500FD1A6A /* Countries.csv in Resources */ = {isa = PBXBuildFile; fileRef = 78E6ED792986882500FD1A6A /* Countries.csv */; };
 		E41A8AC4298647F400F17AF1 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41A8AC3298647F400F17AF1 /* QuestionsViewController.swift */; };
 		E41A8AC62986739300F17AF1 /* CountryClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41A8AC52986739300F17AF1 /* CountryClass.swift */; };
+		E41A8AC82986A4B000F17AF1 /* QuestionClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41A8AC72986A4B000F17AF1 /* QuestionClass.swift */; };
 		E44669362985231E0092699B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44669352985231E0092699B /* AppDelegate.swift */; };
 		E44669382985231E0092699B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44669372985231E0092699B /* SceneDelegate.swift */; };
 		E446693A2985231E0092699B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44669392985231E0092699B /* ViewController.swift */; };
@@ -24,6 +25,7 @@
 		78E6ED792986882500FD1A6A /* Countries.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 0; path = Countries.csv; sourceTree = "<group>"; };
 		E41A8AC3298647F400F17AF1 /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
 		E41A8AC52986739300F17AF1 /* CountryClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryClass.swift; sourceTree = "<group>"; };
+		E41A8AC72986A4B000F17AF1 /* QuestionClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionClass.swift; sourceTree = "<group>"; };
 		E44669322985231E0092699B /* FlagQuizApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlagQuizApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E44669352985231E0092699B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E44669372985231E0092699B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				E44669432985231F0092699B /* Info.plist */,
 				E41A8AC52986739300F17AF1 /* CountryClass.swift */,
 				78E6ED792986882500FD1A6A /* Countries.csv */,
+				E41A8AC72986A4B000F17AF1 /* QuestionClass.swift */,
 			);
 			path = FlagQuizApp;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 				E44669362985231E0092699B /* AppDelegate.swift in Sources */,
 				E41A8AC4298647F400F17AF1 /* QuestionsViewController.swift in Sources */,
 				E44669382985231E0092699B /* SceneDelegate.swift in Sources */,
+				E41A8AC82986A4B000F17AF1 /* QuestionClass.swift in Sources */,
 				E446694C298525550092699B /* ResultsViewController.swift in Sources */,
 				E446694A298524ED0092699B /* SettingsViewController.swift in Sources */,
 				E41A8AC62986739300F17AF1 /* CountryClass.swift in Sources */,
