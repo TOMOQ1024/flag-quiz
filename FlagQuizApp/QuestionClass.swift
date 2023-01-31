@@ -47,4 +47,9 @@ class Question {
         // self.answer設定
         self.answer = Int.random(in: 1...4)
     }
+    
+    func submit(_ id:Int) {
+        // id: 1...4
+        // resultの更新
+    }
 }

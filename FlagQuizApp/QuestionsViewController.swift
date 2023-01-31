@@ -8,15 +8,56 @@
 import UIKit
 
 class QuestionsViewController: UIViewController {
-
+    @IBOutlet weak var questionImage: UIImageView!
+    @IBOutlet weak var submitButton1: UIButton!
+    @IBOutlet weak var submitButton2: UIButton!
+    @IBOutlet weak var submitButton3: UIButton!
+    @IBOutlet weak var submitButton4: UIButton!
+    
+    var q: Question!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        // 設定の適用
+        // これらの引数はSettingsViewControllerから持ってくる
+        q = Question(2, areaFlg)
+        proceed()
+        displayQuestion()
     }
     
     @IBAction func btnAction(sender: UIButton) {
         print(sender.tag)
+        q.submit(sender.tag)
+    }
+    
+    func displayQuestion(){
+        var c = Country.getCountryById(q.options[q.answer-1])
+        questionImage.image = UIImage(
+            named: c.imgSrc
+        )
+        c = Country.getCountryById(q.options[0])
+        submitButton1.setTitle("1. \(c.name)", for: .normal)
+        c = Country.getCountryById(q.options[1])
+        submitButton2.setTitle("2. \(c.name)", for: .normal)
+        c = Country.getCountryById(q.options[2])
+        submitButton3.setTitle("3. \(c.name)", for: .normal)
+        c = Country.getCountryById(q.options[3])
+        submitButton4.setTitle("4. \(c.name)", for: .normal)
+    }
+    
+    func proceed(){
+        if q.current > q.count {
+            // ここでResultViewControllerへ画面遷移する
+            return;
+        }
+        q.create()
+        print("---Question Created---")
+        print("Question \(q.current)/\(q.count)")
+        print("Candidates:")
+        print(q.options.map{Country.getCountryById($0).name})
+        print("Answer Number(1...4): ")
+        print(q.answer)
     }
 
     /*

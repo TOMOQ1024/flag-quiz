@@ -37,16 +37,6 @@ class ViewController: UIViewController {
                 areaFlg[a.key] = true
             }
         }
-        let q = Question(2, areaFlg)
-        for _ in 0..<q.count {
-            q.create()
-            print("---Question Created---")
-            print("Question \(q.current)/\(q.count)")
-            print("Candidates:")
-            print(q.options.map{Country.getCountryById($0).name})
-            print("Answer Number(1...4): ")
-            print(q.answer)
-        }
     }
 
     func loadCSV(fileName: String){

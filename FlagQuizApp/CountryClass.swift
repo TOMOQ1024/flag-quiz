@@ -19,7 +19,7 @@ class Country {
         self.id = id + 1
         self.name = name
         self.area = area
-        self.imgSrc = "Flags/flag\(String(format: "%03d", id + 1))"
+        self.imgSrc = "flag\(String(format: "%03d", id + 1))"
     }
     
     static func getCountryById(_ id: Int) -> Country{
