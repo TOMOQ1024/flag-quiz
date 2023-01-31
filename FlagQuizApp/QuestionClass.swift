@@ -51,5 +51,6 @@ class Question {
     func submit(_ id:Int) {
         // id: 1...4
         // resultの更新
+        print(self.answer == id)
     }
 }

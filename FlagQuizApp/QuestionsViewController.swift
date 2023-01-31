@@ -22,13 +22,14 @@ class QuestionsViewController: UIViewController {
         // 設定の適用
         // これらの引数はSettingsViewControllerから持ってくる
         q = Question(2, areaFlg)
+        print("test question:")
         proceed()
-        displayQuestion()
     }
     
     @IBAction func btnAction(sender: UIButton) {
-        print(sender.tag)
+        // print(sender.tag)
         q.submit(sender.tag)
+        proceed()
     }
     
     func displayQuestion(){
@@ -47,8 +48,9 @@ class QuestionsViewController: UIViewController {
     }
     
     func proceed(){
-        if q.current > q.count {
+        if q.current >= q.count {
             // ここでResultViewControllerへ画面遷移する
+            self.performSegue(withIdentifier: "QuestionExit", sender: nil)
             return;
         }
         q.create()
@@ -58,6 +60,7 @@ class QuestionsViewController: UIViewController {
         print(q.options.map{Country.getCountryById($0).name})
         print("Answer Number(1...4): ")
         print(q.answer)
+        displayQuestion()
     }
 
     /*

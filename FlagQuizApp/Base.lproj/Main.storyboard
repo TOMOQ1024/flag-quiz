@@ -115,7 +115,7 @@
                                 <rect key="frame" x="36" y="121" width="320" height="210"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qeW-pq-kxD">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qeW-pq-kxD">
                                 <rect key="frame" x="0.0" y="498" width="393" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
@@ -126,7 +126,7 @@
                                     <action selector="btnActionWithSender:" destination="7ee-L0-SK8" eventType="touchUpInside" id="bL8-Dh-BZx"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ACZ-zj-ZBg">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ACZ-zj-ZBg">
                                 <rect key="frame" x="0.0" y="576" width="393" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
@@ -137,7 +137,7 @@
                                     <action selector="btnActionWithSender:" destination="7ee-L0-SK8" eventType="touchUpInside" id="oCO-uu-iYf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ukC-wQ-bdI">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ukC-wQ-bdI">
                                 <rect key="frame" x="0.0" y="657" width="393" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
@@ -148,7 +148,7 @@
                                     <action selector="btnActionWithSender:" destination="7ee-L0-SK8" eventType="touchUpInside" id="rLJ-oa-QAc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oq8-72-gj7">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oq8-72-gj7">
                                 <rect key="frame" x="0.0" y="413" width="393" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
@@ -169,7 +169,7 @@
                         <outlet property="submitButton2" destination="qeW-pq-kxD" id="is1-2p-waB"/>
                         <outlet property="submitButton3" destination="ACZ-zj-ZBg" id="CVI-Fx-Bn2"/>
                         <outlet property="submitButton4" destination="ukC-wQ-bdI" id="VBN-iG-kc3"/>
-                        <segue destination="CqT-RB-CmE" kind="presentation" id="JzZ-sd-ELG"/>
+                        <segue destination="CqT-RB-CmE" kind="presentation" identifier="QuestionExit" id="JzZ-sd-ELG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AWx-wV-FTl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

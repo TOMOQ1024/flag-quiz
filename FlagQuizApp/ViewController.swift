@@ -31,7 +31,6 @@ class ViewController: UIViewController {
             countries[newCountry.area]?.append(newCountry)
         }
         
-        print("test question:")
         for a in countries {
             if !(areaFlg[a.key] ?? false) {
                 areaFlg[a.key] = true
