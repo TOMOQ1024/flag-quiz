@@ -35,14 +35,102 @@
                                     <segue destination="CFH-y4-hTu" kind="presentation" id="gES-mc-W4X"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Yb-Yt-eiE">
+                                <rect key="frame" x="87" y="651" width="219" height="67"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Statistics">
+                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="48"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="hD3-cv-Sfw" kind="presentation" modalPresentationStyle="fullScreen" id="HDB-WS-X3k"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9Yb-Yt-eiE" secondAttribute="bottom" constant="100" id="PXW-HH-Qxo"/>
+                            <constraint firstItem="9Yb-Yt-eiE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S3d-tY-ew8"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="TYX-5R-DS3"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="20.610687022900763" y="3.5211267605633805"/>
+        </scene>
+        <!--Statistics-->
+        <scene sceneID="odH-AN-iuj">
+            <objects>
+                <viewController title="Statistics" id="hD3-cv-Sfw" customClass="StatisticsViewController" customModule="FlagQuizApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VWX-nV-pL0">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VVV-sr-9xQ" customClass="PieChartView" customModule="Charts">
+                                <rect key="frame" x="76" y="184" width="240" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="覚えた国旗" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUJ-yW-dUr">
+                                <rect key="frame" x="90" y="87" width="212" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PqW-HD-ixf">
+                                <rect key="frame" x="268" y="429" width="75" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ハイスコア" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RPs-t7-55i">
+                                <rect key="frame" x="50" y="429" width="162" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SVw-Iz-Lvc">
+                                <rect key="frame" x="285" y="341" width="73" height="43"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="詳細">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="24"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vDY-xy-65r">
+                                <rect key="frame" x="140.66666666666666" y="701.66666666666663" width="112" height="66.333333333333371"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Back">
+                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="48"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="backButton:" destination="hD3-cv-Sfw" eventType="touchUpInside" id="WKQ-Nt-YOD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="72S-FV-DsN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="72S-FV-DsN" firstAttribute="bottom" secondItem="RPs-t7-55i" secondAttribute="bottom" constant="350" id="D28-yg-oxb"/>
+                            <constraint firstItem="72S-FV-DsN" firstAttribute="trailing" secondItem="PqW-HD-ixf" secondAttribute="trailing" constant="50" id="D39-H4-eDP"/>
+                            <constraint firstItem="72S-FV-DsN" firstAttribute="trailing" secondItem="SVw-Iz-Lvc" secondAttribute="trailing" constant="35" id="DL9-V9-DPH"/>
+                            <constraint firstItem="vDY-xy-65r" firstAttribute="centerX" secondItem="VWX-nV-pL0" secondAttribute="centerX" id="cZx-L9-fPt"/>
+                            <constraint firstItem="72S-FV-DsN" firstAttribute="bottom" secondItem="PqW-HD-ixf" secondAttribute="bottom" constant="350" id="fbK-Sr-mNf"/>
+                            <constraint firstItem="72S-FV-DsN" firstAttribute="bottom" secondItem="vDY-xy-65r" secondAttribute="bottom" constant="50" id="qCx-a8-t68"/>
+                            <constraint firstItem="RPs-t7-55i" firstAttribute="leading" secondItem="72S-FV-DsN" secondAttribute="leading" constant="50" id="uUq-ML-c2P"/>
+                            <constraint firstItem="SVw-Iz-Lvc" firstAttribute="top" secondItem="VWX-nV-pL0" secondAttribute="top" constant="341" id="zep-c4-ZE0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="CTJ-79-Cdb"/>
+                    <connections>
+                        <outlet property="hiScore" destination="PqW-HD-ixf" id="eRy-8s-3Cs"/>
+                        <outlet property="pieChartView" destination="VVV-sr-9xQ" id="lcH-Wx-pY5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mK0-FV-fSa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20.610687022900763" y="696.47887323943667"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="ODa-OX-cdH">

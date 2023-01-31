@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		469749CE97E36D78B9E1FB3C /* Pods_FlagQuizApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DE08C608CF208DF14CA8CEB /* Pods_FlagQuizApp.framework */; };
 		78E6ED802986ACF800FD1A6A /* Countries.csv in Resources */ = {isa = PBXBuildFile; fileRef = 78E6ED7F2986ACF800FD1A6A /* Countries.csv */; };
+		78E6EDA229899BC300FD1A6A /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E6EDA129899BC300FD1A6A /* StatisticsViewController.swift */; };
 		E41A8AC4298647F400F17AF1 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41A8AC3298647F400F17AF1 /* QuestionsViewController.swift */; };
 		E41A8AC62986739300F17AF1 /* CountryClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41A8AC52986739300F17AF1 /* CountryClass.swift */; };
 		E41A8AC82986A4B000F17AF1 /* QuestionClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41A8AC72986A4B000F17AF1 /* QuestionClass.swift */; };
@@ -22,7 +24,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5DE08C608CF208DF14CA8CEB /* Pods_FlagQuizApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlagQuizApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78E6ED7F2986ACF800FD1A6A /* Countries.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Countries.csv; sourceTree = "<group>"; };
+		78E6EDA129899BC300FD1A6A /* StatisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
+		87AD209C95682FEF943F55D3 /* Pods-FlagQuizApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlagQuizApp.release.xcconfig"; path = "Target Support Files/Pods-FlagQuizApp/Pods-FlagQuizApp.release.xcconfig"; sourceTree = "<group>"; };
+		D556DBC50DBDD6A0DB11823A /* Pods-FlagQuizApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlagQuizApp.debug.xcconfig"; path = "Target Support Files/Pods-FlagQuizApp/Pods-FlagQuizApp.debug.xcconfig"; sourceTree = "<group>"; };
 		E41A8AC3298647F400F17AF1 /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
 		E41A8AC52986739300F17AF1 /* CountryClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryClass.swift; sourceTree = "<group>"; };
 		E41A8AC72986A4B000F17AF1 /* QuestionClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionClass.swift; sourceTree = "<group>"; };
@@ -43,17 +49,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				469749CE97E36D78B9E1FB3C /* Pods_FlagQuizApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BDE1F5BC7CE275A6E603F791 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D556DBC50DBDD6A0DB11823A /* Pods-FlagQuizApp.debug.xcconfig */,
+				87AD209C95682FEF943F55D3 /* Pods-FlagQuizApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E44669292985231E0092699B = {
 			isa = PBXGroup;
 			children = (
 				E44669342985231E0092699B /* FlagQuizApp */,
 				E44669332985231E0092699B /* Products */,
+				BDE1F5BC7CE275A6E603F791 /* Pods */,
+				E9ECBE269E5C4194953CF8D1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,6 +87,7 @@
 		E44669342985231E0092699B /* FlagQuizApp */ = {
 			isa = PBXGroup;
 			children = (
+				78E6EDA129899BC300FD1A6A /* StatisticsViewController.swift */,
 				E44669352985231E0092699B /* AppDelegate.swift */,
 				E44669372985231E0092699B /* SceneDelegate.swift */,
 				E44669392985231E0092699B /* ViewController.swift */,
@@ -80,10 +100,17 @@
 				E44669432985231F0092699B /* Info.plist */,
 				E41A8AC52986739300F17AF1 /* CountryClass.swift */,
 				78E6ED7F2986ACF800FD1A6A /* Countries.csv */,
-				78E6ED792986882500FD1A6A /* Countries.csv */,
 				E41A8AC72986A4B000F17AF1 /* QuestionClass.swift */,
 			);
 			path = FlagQuizApp;
+			sourceTree = "<group>";
+		};
+		E9ECBE269E5C4194953CF8D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5DE08C608CF208DF14CA8CEB /* Pods_FlagQuizApp.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,9 +120,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E44669462985231F0092699B /* Build configuration list for PBXNativeTarget "FlagQuizApp" */;
 			buildPhases = (
+				A175ECCE5D4A8338E592B945 /* [CP] Check Pods Manifest.lock */,
 				E446692E2985231E0092699B /* Sources */,
 				E446692F2985231E0092699B /* Frameworks */,
 				E44669302985231E0092699B /* Resources */,
+				E46A5F61145954D899DA16DF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -153,6 +182,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A175ECCE5D4A8338E592B945 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlagQuizApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E46A5F61145954D899DA16DF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlagQuizApp/Pods-FlagQuizApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlagQuizApp/Pods-FlagQuizApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlagQuizApp/Pods-FlagQuizApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E446692E2985231E0092699B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -164,6 +235,7 @@
 				E44669382985231E0092699B /* SceneDelegate.swift in Sources */,
 				E41A8AC82986A4B000F17AF1 /* QuestionClass.swift in Sources */,
 				E446694C298525550092699B /* ResultsViewController.swift in Sources */,
+				78E6EDA229899BC300FD1A6A /* StatisticsViewController.swift in Sources */,
 				E446694A298524ED0092699B /* SettingsViewController.swift in Sources */,
 				E41A8AC62986739300F17AF1 /* CountryClass.swift in Sources */,
 			);
@@ -307,6 +379,7 @@
 		};
 		E44669472985231F0092699B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D556DBC50DBDD6A0DB11823A /* Pods-FlagQuizApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -335,6 +408,7 @@
 		};
 		E44669482985231F0092699B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87AD209C95682FEF943F55D3 /* Pods-FlagQuizApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
