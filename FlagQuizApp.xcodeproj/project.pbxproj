@@ -19,6 +19,7 @@
 		E44669422985231F0092699B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E44669402985231F0092699B /* LaunchScreen.storyboard */; };
 		E446694A298524ED0092699B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4466949298524ED0092699B /* SettingsViewController.swift */; };
 		E446694C298525550092699B /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E446694B298525550092699B /* ResultsViewController.swift */; };
+		E4D5F13A298B45B700CB121A /* ResultClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D5F139298B45B700CB121A /* ResultClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		E44669432985231F0092699B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4466949298524ED0092699B /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		E446694B298525550092699B /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		E4D5F139298B45B700CB121A /* ResultClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +82,7 @@
 				E44669432985231F0092699B /* Info.plist */,
 				E41A8AC52986739300F17AF1 /* CountryClass.swift */,
 				78E6ED7F2986ACF800FD1A6A /* Countries.csv */,
-				78E6ED792986882500FD1A6A /* Countries.csv */,
+				E4D5F139298B45B700CB121A /* ResultClass.swift */,
 				E41A8AC72986A4B000F17AF1 /* QuestionClass.swift */,
 			);
 			path = FlagQuizApp;
@@ -166,6 +168,7 @@
 				E446694C298525550092699B /* ResultsViewController.swift in Sources */,
 				E446694A298524ED0092699B /* SettingsViewController.swift in Sources */,
 				E41A8AC62986739300F17AF1 /* CountryClass.swift in Sources */,
+				E4D5F13A298B45B700CB121A /* ResultClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,11 +8,19 @@
 import UIKit
 
 class ResultsViewController: UIViewController {
+    @IBOutlet weak var resultLabel: UILabel!
+    
+    var results: [QResult] = []
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        if results.count < 1 {
+            return
+        }
+        resultLabel.text = "\(results.filter{$0.correct}.count) / \(results.count)"
     }
     
 

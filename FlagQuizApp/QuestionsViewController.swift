@@ -26,6 +26,11 @@ class QuestionsViewController: UIViewController {
         proceed()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let resultsVC = segue.destination as! ResultsViewController
+        resultsVC.results = q.qresults
+    }
+    
     @IBAction func btnAction(sender: UIButton) {
         // print(sender.tag)
         q.submit(sender.tag)
@@ -33,7 +38,7 @@ class QuestionsViewController: UIViewController {
     }
     
     func displayQuestion(){
-        var c = Country.getCountryById(q.options[q.answer-1])
+        var c = Country.getCountryById(q.options[q.answer])
         questionImage.image = UIImage(
             named: c.imgSrc
         )
@@ -59,7 +64,7 @@ class QuestionsViewController: UIViewController {
         print("Candidates:")
         print(q.options.map{Country.getCountryById($0).name})
         print("Answer Number(1...4): ")
-        print(q.answer)
+        print(q.answer+1)
         displayQuestion()
     }
 
